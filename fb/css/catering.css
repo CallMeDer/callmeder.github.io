@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#header {
+    height: 40px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    padding: 8px 16px;
+}
+
+#nav1 {
+    display: inline-block;
+    float: right; 
+}
+
+#nav1 > li {
+    display: inline-block;
+}
+
+#nav1 li {
+    position: relative;
+}
+
+#nav1 > li > a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#nav1 li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav1 > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    padding: 8px 16px;
+}
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/fb/ảnh/hamburger.jpg') top center / cover no-repeat;
+    
+}    
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #56575a;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-48%); 
+    
+}
