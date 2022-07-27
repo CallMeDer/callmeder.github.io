@@ -61,9 +61,8 @@ html {
     font-family: Helvetica, sans-serif;
 }
 
-#main{
+#main {}
 
-}
 #header {
     height: 46px;
     background-color: #000;
@@ -78,11 +77,12 @@ html {
     display: inline-block;
 }
 
-#nav, .subnav {
+#nav,
+.subnav {
     list-style-type: none;
 }
 
-#nav > li {
+#nav>li {
     display: inline-block;
 }
 
@@ -90,7 +90,7 @@ html {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
@@ -106,8 +106,8 @@ html {
     display: block;
 }
 
-#nav > li:hover > a,
-#nav .subnav li:hover a{
+#nav>li:hover>a,
+#nav .subnav li:hover a {
     color: #000;
     background-color: #ccc;
 }
@@ -128,7 +128,7 @@ html {
     line-height: 38px;
 }
 
-#nav .nav-around-down{
+#nav .nav-around-down {
     font-size: 14px;
 }
 
@@ -146,16 +146,17 @@ html {
     padding: 0 21px;
 }
 
-#header .mobile-menu-btn:hover  {
+#header .mobile-menu-btn:hover {
     background-color: #ccc;
 }
+
 #header .mobile-menu-btn:hover .menu-icon {
     color: #000;
 }
 
-#header .search-btn:hover{
-    color: #fff!important;
-    background-color: #f44336!important;
+#header .search-btn:hover {
+    color: #fff !important;
+    background-color: #f44336 !important;
     cursor: pointer;
 }
 
@@ -166,39 +167,55 @@ html {
     line-height: 46px;
 }
 
-#slider {
+#slider-container {
+    display: relative;
+}
+
+.slider {
+    display: none;
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
-    background: url('/fb/ảnh/chicago.jpg') top center / cover no-repeat;
-    /* background: url('/img/la.jpg'); 
-    background: url('/img/ny.jpg'); */
-    /* float: right; */
-}    
+    padding-top: 0%;
 
-#slider .text-content {
+ 
+}
+
+.slider img {
+    object-fit: fill;
+    width: 100%
+}
+
+
+
+
+.slider .text-content {
+    z-index: 99;
     position: absolute;
-    bottom: 47px;
+    bottom: 46px;
     color: #fff;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+
 }
 
 #slider .text-heading {
     font-weight: 500;
     font-size: 24px;
+
 }
 
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-}
-
-#content{
+    text-shadow: 0 0 1px #000;
 
 }
+
+
+
+#content {}
 
 #content .content-section {
     width: 800px;
@@ -233,13 +250,13 @@ html {
 }
 
 #content .members-list {
-   margin-top: 48px;
-   overflow: hidden;
+    margin-top: 48px;
+    overflow: hidden;
 }
 
 #content .member-name {
     font-size: 15px;
-    
+
 }
 
 #content .member-img {
@@ -311,15 +328,18 @@ html {
     font-size: 15px;
     font-weight: 600;
 }
+
 .place-time {
     margin-top: 15px;
     color: #757575;
 }
+
 .place-dsc {
     margin-top: 15px;
-    line-height: 1.4;            
+    line-height: 1.4;
 }
-.place-buy-btn{
+
+.place-buy-btn {
     color: #fff;
     background-color: #000;
     text-decoration: none;
@@ -331,7 +351,7 @@ html {
 }
 
 .place-buy-btn:hover {
-    color:#000;
+    color: #000;
     background-color: #ccc;
 }
 
@@ -418,7 +438,7 @@ html {
     background-color: #009688;
     font-size: 15px;
     text-transform: uppercase;
-    padding: 18px; 
+    padding: 18px;
     cursor: pointer;
 }
 
@@ -483,6 +503,7 @@ html {
     cursor: pointer;
     border: #000;
 }
+
 .form-submit-btn:hover {
     color: #000;
     background-color: #ccc;
@@ -496,7 +517,7 @@ html {
 }
 
 /* Footer section */
-#footer{
+#footer {
     padding: 64px 16px;
     text-align: center;
 }
@@ -506,12 +527,13 @@ html {
 }
 
 #footer .social-list a {
-    color:rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 
 }
-#footer .copyright a:hover, 
+
+#footer .copyright a:hover,
 #footer .social-list a:hover {
-    color:rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 #footer .copyright {
@@ -528,6 +550,7 @@ html {
         opacity: 0;
         transform: translateY(-140px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
