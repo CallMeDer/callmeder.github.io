@@ -3,7 +3,7 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
     line-height: 1.6;
     background-color: #222;
-    color: #black;
+    color: #222;
 }
 
 #main {
@@ -45,6 +45,55 @@ body {
     border-radius: 7px;
     padding-bottom: 15px;
 }
+
+.place-list {
+    margin: 30px -8px 0px;
+}
+.place-item {
+    float: right;
+    width: calc(100% / 3);
+    padding: 0px 8px;
+    padding-bottom: 48px;
+}
+.bia-img {
+    width: 25%;
+    display: block;
+}
+
+.bia-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    float: left;
+    padding: 16px;
+    color: #000;
+    font-size: 10px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-dsc {
+    margin-top: 15px;
+    line-height: 1.4;            
+}
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    color:#000;
+    background-color: #ccc;
+}
+
 
 #tribute-info {
     max-width: 75%;
