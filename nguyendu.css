@@ -3,14 +3,24 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
     line-height: 1.6;
     background-color: #222;
-    color: #black;
+    color: white;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
 }
 
 #main {
     width: 80%;
     margin: 35px auto;
     text-align: center;
-    background-color: #f5e4b6;
+    background-color: #1d1e26;
     padding: 0px 30px;
     border-radius: 12px;
     box-shadow: 2px 5px 10px #aaa;
@@ -19,7 +29,7 @@ body {
 #main>header>#title {
     font-size: 32px;
     padding-top: 10px;
-    border-bottom: 1px solid #333;
+
 }
 
 #main>header>p {
@@ -29,12 +39,13 @@ body {
 }
 
 #img-div {
-    max-width: 60%;
+    /* background: url('nguyendu.jpg') top center / cover no-repeat; */
+    max-width: 100%;
     margin: 25px auto;
     padding: 20px 0;
-    background-color: #c5dbe8;
     text-align: center;
     border-radius: 7px;
+
 }
 
 #img-div>img {
@@ -47,14 +58,33 @@ body {
 }
 
 #tribute-info {
+    columns: 2;
+    display: flex;
+    justify-content: space-between;
     max-width: 75%;
     margin: auto;
+    border-bottom: 1px solid #aaa;
 }
 
-#tribute-info>h2 {
-    font-size: 22px;
-    padding-bottom: 15px;
+#tribute-info .tieusu {
+    padding-right: 70px;
+    align-content: flex-start;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 13px;
 }
+
+#tribute-info .image {
+    box-sizing: inherit;
+    padding-top: 100px;
+}
+
+#tribute-info .ts {
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
 
 #tribute-info>ul {
     text-align: left;
@@ -66,24 +96,60 @@ body {
     padding-bottom: 20px;
 }
 
-#tribute-info>#blockquote {
-    border: 2px solid #222;
+
+
+#blockquote {
     padding-bottom: 16px;
     border-radius: 6px;
     max-width: 80%;
     margin: auto;
 }
 
+.member-item {
+    column-fill: auto;
+    border: 0.5px solid #aaa;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.sach-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+.bia-name {
+    font-size: 15px;
+}
+
+.bia-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
 #main>footer {
     padding: 25px 0;
 }
 
 #main>footer>a {
+    text-decoration: none;
     color: #bbb;
 }
 
 #main>footer>a:hover {
     font-weight: bold;
+}
+
+#blockquote a {
+    justify-content: end;
+    color: #333;
+    text-decoration: none;
 }
 
 /* Media Query for mobile devices */
